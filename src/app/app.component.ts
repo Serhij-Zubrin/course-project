@@ -6,12 +6,16 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-
+   activeMenu = 'recipe';
   constructor(){
 
   }
 
   ngOnInit(): void {
 
+  }
+
+  onNavigate(text: string){
+    this.activeMenu = text;
   }
 }
