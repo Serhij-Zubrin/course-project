@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild, OnInit } from "@angular/core";
 
-import { Ingredient } from "../../shared/indredient.modul";
+import { Ingredient } from "../../shared/indredient.model";
 import { ShoppingListService } from "../services/shopping-list.service";
 
 @Component({
