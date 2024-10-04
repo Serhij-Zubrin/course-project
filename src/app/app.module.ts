@@ -19,6 +19,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RecipeNewComponent } from './recipes/recipe-new/recipe-new.component';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
     PageNotFoundComponent,
     RecipeNewComponent,
     RecipeStartComponent,
+    RecipeEditComponent,
   ],
   imports: [
     BrowserModule,
