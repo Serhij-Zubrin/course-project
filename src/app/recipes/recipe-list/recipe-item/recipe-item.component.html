@@ -1,11 +1,13 @@
 <a
-href="#"
-class="list-group-item clearfix recipe-cart" (click)="onSelectRecipe()">
+class="list-group-item clearfix recipe-cart"
+style="cursor: pointer;"
+[routerLink]="[index]"
+routerLinkActive="active">
     <div class="pull-left">
         <h4 class="list-group-item-heading recipe-heading">{{ recipe.name }}</h4>
-          <div class="recipe-img-container">
-              <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-responsive recipe-img pull-right" title="{{ recipe.name }}" >
-          </div>
-          <p class="list-group-item-text recipe-description" >{{ recipe.description }}</p>
-      </div>
+        <div class="recipe-img-container">
+            <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-responsive recipe-img pull-right" title="{{ recipe.name }}" >
+        </div>
+        <p class="list-group-item-text recipe-description" >{{ recipe.description }}</p>
+    </div>
 </a>
